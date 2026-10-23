@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.installsim/
+.DS_Store
+
+# lib/ 是发布产物，必须提交：安装时不再运行任何构建脚本（没有 prepare 脚本，
+# 也不允许 git 依赖在安装期编译）。改源码后记得 `pnpm run build` 并一起提交 lib/。
+# lib/
